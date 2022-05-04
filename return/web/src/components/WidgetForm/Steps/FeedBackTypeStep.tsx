@@ -5,7 +5,9 @@ interface FeedBackTypeStepProps {
   onFeedBackTypeChanged: (key: FeedBackType) => void;
 }
 
-export function FeedBackTypeStep({ onFeedBackTypeChanged }: FeedBackTypeStepProps) {
+export function FeedBackTypeStep({
+  onFeedBackTypeChanged,
+}: FeedBackTypeStepProps) {
   return (
     <>
       <header>
@@ -18,8 +20,10 @@ export function FeedBackTypeStep({ onFeedBackTypeChanged }: FeedBackTypeStepProp
           return (
             <button
               key={key}
-              className="bg-zinc-800 rounded-lg py-5 w-24 flex-1 flex flex-col items-center gap-2 border-2 border-transparent hover:border-brand-500 focus:border-brand-500 focus:outline-none"
-              onClick={() => onFeedBackTypeChanged(key as FeedBackType)}
+              className="bg-zinc-800 rounded-lg py-5 w-24 flex-1 flex flex-col items-center gap-2 border-2 border-transparent hover:border-brand-500 focus:outline-none focus:border-brand-500  focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-brand-500"
+              onClick={() =>
+                onFeedBackTypeChanged(key as FeedBackType)
+              }
             >
               <img src={value.image.source} alt={value.image.alt} />
               <span>{value.title}</span>

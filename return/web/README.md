@@ -10,4 +10,7 @@
 
 ### Aula 2
 
+- [@tailwindcss/forms](https://github.com/tailwindlabs/tailwindcss-forms)
+- [Scrollbar Plugin](https://www.npmjs.com/package/tailwind-scrollbar)
+- [html2canvas](https://html2canvas.hertzen.com/)
 - Tempo 41:34
