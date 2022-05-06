@@ -24,10 +24,7 @@ export class CreateFeedBackUseCase {
       throw new Error('comment is required');
     }
 
-    if (
-      data.screenshot &&
-      !data.screenshot.startsWith('data:image/png;base64')
-    ) {
+    if (data.screenshot && !data.screenshot.startsWith('data:image/png;base64')) {
       throw new Error('Invalid screenshot format');
     }
 
@@ -38,7 +35,7 @@ export class CreateFeedBackUseCase {
         `<div style="font-family: sans-serif; font-size: 16px; color: #111">`,
         `<p><b>Tipo do feedback</b>: ${data.type}</p>`,
         `<p><b>Comentário</b>:  ${data.comment}</p>`,
-        `<p><img src="${data.screenshot}" /></p>`,
+        data.screenshot ? `<p><img src="${data.screenshot}" /></p>` : '',
         `</div>`,
       ].join('\n'),
     });
