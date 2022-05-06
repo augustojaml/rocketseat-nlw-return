@@ -7,5 +7,7 @@
 - [React Native Bottom Sheet](https://gorhom.github.io/react-native-bottom-sheet/)
 - [Reanimated](https://docs.expo.dev/versions/latest/sdk/reanimated/)
 - [GestureHandler](https://docs.expo.dev/versions/latest/sdk/gesture-handler/)
+- [react-native-view-shot](https://github.com/gre/react-native-view-shot)
+- [FileSystem](https://docs.expo.dev/versions/latest/sdk/filesystem/)
 
 - Parou em 53:45

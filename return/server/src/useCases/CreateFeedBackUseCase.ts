@@ -38,6 +38,7 @@ export class CreateFeedBackUseCase {
         `<div style="font-family: sans-serif; font-size: 16px; color: #111">`,
         `<p><b>Tipo do feedback</b>: ${data.type}</p>`,
         `<p><b>Comentário</b>:  ${data.comment}</p>`,
+        `<p><img src="${data.screenshot}" /></p>`,
         `</div>`,
       ].join('\n'),
     });
